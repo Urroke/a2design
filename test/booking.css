@@ -1,0 +1,49 @@
+.book_a_table {
+  width: 565px;
+  margin-top: 112px;
+  float: left;
+}
+
+.booking {
+  margin-top: -20px;
+}
+
+.booking_button {
+  width: 565px;
+  height: 60px;
+}
+
+.booking_button:hover {
+  box-shadow: 0px 0px 10px#000000c5;
+}
+
+.booking_input {
+  width: 259px;
+}
+
+.booking_input:focus {
+  width: 274px;
+}
+
+.left_button {
+  margin-right: 10px;
+}
+
+.booking_wand {
+  margin-bottom: 20px;
+  margin-top: 14px;
+}
+
+.booking_img {
+  margin-right: 65px;
+}
+
+.work_info {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-top: 65px;
+  margin-bottom: 44px;
+}

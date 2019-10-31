@@ -1,0 +1,14 @@
+.about_us {
+  margin-top: 50px;
+}
+.about_us_block {
+  float: left;
+  width: 600px;
+  margin-top: 167px;
+}
+
+.about_img {
+  display: block;
+  float: left;
+  margin-left: 30px;
+}

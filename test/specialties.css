@@ -1,0 +1,19 @@
+.specialties {
+  background-image: url(./images/spec.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.specialties_text {
+  width: 100%;
+  height: 18.39px;
+  font-weight: bold;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  margin-top: 44px;
+  margin-bottom: -6px;
+}

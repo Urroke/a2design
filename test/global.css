@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+}
+
+.page {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.subtitle {
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.default_text {
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-align: center;
+}
+
+.large_text {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.center_content_block {
+  display: inline-block;
+  clear: both;
+}
+
+.yellow_wand {
+  display: inline-block;
+  width: 60px;
+  height: 5.11px;
+  background: #e8c300;
+  border-radius: 50px;
+}
+
+.input {
+  padding: 0;
+  padding-left: 15px;
+  background: #e5e5e5;
+  border-radius: 5px;
+  height: 60px;
+  border: none;
+  margin-bottom: 10px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.input:focus {
+  background: #ffffff;
+  border: 1px solid #e8c300;
+  box-sizing: border-box;
+}
+
+.none_color {
+  border: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.yellow {
+  border: none;
+  background-color: #e8c300;
+}
+
+.button {
+  border-radius: 5px;
+  line-height: 20px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text_block {
+}
