@@ -4,9 +4,10 @@
   margin-right: 2px;
 }
 
-.contact_right_input {
+.contact_input:last-child {
   margin-right: 0px;
 }
+
 .contact_input:focus {
   width: 379px;
 }
