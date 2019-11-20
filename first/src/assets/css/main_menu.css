@@ -1,0 +1,123 @@
+.main_header{
+    height: 146px;
+    background-color: #fff;
+}
+
+.nav_menu{
+    height: 56px;
+    padding-left: 100px;
+    line-height:  56px;
+    vertical-align: middle;
+}
+
+.main_menu_button
+{
+    width: 170px;
+    border-right: 1px solid #f0f2f7;;
+    height: 89px;
+    float: left;
+}
+
+.button_block{
+    height: 89px;
+    line-height: 90px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0f2f7;;
+}
+
+.menu_icon{
+    width: 20px;
+    height: 14px;
+    float: left;
+    margin: 37px 0px 0px 115px;
+}
+
+.page_name{
+    float: left;
+    margin: 32px 142px 32px 32px;
+    height: 25px;
+    width: 92px;
+}
+
+.menu_item{
+    float: left; 
+    font-size: 14px;
+    margin: 0px 14px 0px 15px;;
+}
+
+.cart_icon{
+    height: 17px;
+    width: 18px;
+    float: right;
+    margin: 36px 8px 0px 0px;
+}
+
+.purchase_count{
+    float: right;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    padding-top: 0px;
+    border-radius: 12px;
+    background-color: #e3e8f0;
+    margin: 33px 29px 0px 0px;
+}
+
+.sign_in{
+    float: right;
+    width: 85px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 16px;
+    border: 2px solid #e3e8f0;
+    margin: 29px 115px 0px 0px;
+    letter-spacing: 1.1px;
+    font-size: 11px;;
+}
+
+.cart{
+    float: right;
+    letter-spacing: 0.55px;
+    margin: 0px 7px 0px 0px;
+    font-size: 11px;;
+}
+
+.nav_menu_link{
+    float: left;
+    margin: 0px 15px 0px 15px;
+    font-size: 11px;
+    color: #b9bed1;
+    letter-spacing: 1.1px;
+}
+
+.focus_link{
+    color: #343e5c;
+}
+
+.find_block{
+    float: right;
+    height: 55px;
+    border-left: 1px solid #f0f2f7;;
+    border-right: 1px solid #f0f2f7;;
+    margin-right: 115px;
+    margin-left: 32px;
+}
+
+.find_icon{
+    float: left;
+    width: 13px;
+    height: 13px;
+    margin: 22px 13px 0px 21px;
+}
+
+.i_am_looking{
+    float: left;
+    font-size: 14px;
+    color: #a1a8bd;
+    margin: 0px 41px 0px 0px;
+}
+
+.support{
+    float: right;
+    margin-right: 0px;
+}

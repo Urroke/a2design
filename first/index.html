@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @import url("./global.css");
+      @import url("./src/assets/css/main_menu.css");
+      @import url("./src/assets/css/sort.css");
+      @import url("./src/assets/css/banner.css");
+      @import url("./src/assets/css/filter.css");
+      @import url("./src/assets/css/footer.css");
+      @import url("./src/assets/css/paginator.css");
+      @import url("./src/assets/css/products.css");
+      @import url("./src/assets/css/sort.css");
+      @import url("./src/assets/css/testimoials.css");
+      @import url("./src/assets/css/best_sellers.css");
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./src/assets/js/index.js"></script>
+  </head>
+
+  <body>
+    <header class="main_header">
+        <div class="button_block">
+            <div class="main_menu_button">
+                <img class="menu_icon"src="src/assets/images/icon.png" alt=":(">
+            </div>
+            <img class="page_name"src="src/assets/images/name.png" alt="kek">
+            <div class="menu_item">Home</div>
+            <div class="menu_item">Devices</div>
+            <div class="menu_item">Delivery & Payment</div>
+            <div class="menu_item">Guarantee</div>
+            <div class="menu_item">About Us</div>
+            <div class="sign_in">SIGN IN</div>
+            <div class="purchase_count">0</div>
+            <div class="cart">CART</div>
+            <img src="src/assets/images/cart.png" alt=":(" class="cart_icon">
+        </div>
+        <nav class="nav_menu">
+            <div class="nav_menu_link ">TOP SALES</div>
+            <div class="nav_menu_link ">BRAND FOCUS</div>
+            <div class="nav_menu_link  focus_link">HI-TECH</div>
+            <div class="nav_menu_link ">BEST SELLERS</div>
+            <div class="nav_menu_link ">PROJECTS</div>
+            <div class="find_block">
+                    <img src="src/assets/images/find.png" alt=":(" class="find_icon">
+                    <div class="nav_menu_link i_am_looking">I’m looking for ...</div>
+            </div>
+            <div class="nav_menu_link support">SUPPORT</div>
+        </nav>
+    </header>
+    
+    <article class="banner">
+        <div class="about_iphone">
+            <div class="iphone_model">iPhone 6 32Gb Black</div>
+            <div class="iphone_text">At first, for some time, 
+                I was not able to answer him one word; but as he had 
+                taken me in his arms I held fast by him, or I should have
+                 fallen to the ground.
+            </div>
+            <div class="buy_button"> BUY NOW</div>
+        </div>
+        <div class="bunner_puginator">
+            <div class="bunner_puginator_item chosen_bunner_puginator_item"></div>
+            <div class="bunner_puginator_item"></div>
+            <div class="bunner_puginator_item"></div>
+            <div class="bunner_puginator_item"></div>
+        </div>
+    </article>
+
+    <section class="center_content_block">
+        
+        <div class="horizontal block">
+            <section class="sort_menu">    
+                  
+            </section>
+        </div>
+        <div class="center_content_block">
+            <aside class="filter_bar">
+                <section class="filter">
+                    <div class="filter_menu_item default_black_text">Top Sales<img src="src/assets/images/arrow.png" alt=">" class="left_arrow"></div>
+                    <div class="filter_menu_item default_black_text">Top Sales<img src="src/assets/images/arrow.png" alt=">" class="left_arrow"></div>
+                    <div class="sub_filter_menu">
+                            <div class="filter_menu_item default_black_text" >Top Sales <img src="src/assets/images/arrow.png" alt=">" class="left_arrow" onclick="OpenSubMenu(event)"></div>
+                            <div class="sub_filter_menu_item default_gray_text">Top Sales</div>
+                            <div class="sub_filter_menu_item default_gray_text">Top Sales</div>
+                            <div class="sub_filter_menu_item default_gray_text">Top Sales</div>
+                            <div class="sub_filter_menu_item default_gray_text">Top Sales</div>
+                            <div class="sub_filter_menu_item default_gray_text">Top Sales</div>
+                            <div class="sub_filter_menu_item default_gray_text">Top Sales</div>
+                    </div>
+                    <div class="filter_menu_item default_black_text">Top Sales<img src="src/assets/images/arrow.png" alt=">" class="left_arrow"></div>
+                    <div class="filter_menu_item default_black_text">Top Sales<img src="src/assets/images/arrow.png" alt=">" class="left_arrow"></div>
+                    <div class="filter_menu_item default_black_text">Top Sales<img src="src/assets/images/arrow.png" alt=">" class="left_arrow"></div>
+                </section>
+                <section class="filter">
+                    <div class="filter_head default_black_text">BRANDS </div>
+                    <div class="filter_option default_black_text">Apple<div class="green_no_chose_flag" onclick="SetFilterOption(event)"></div></div>
+                    <div class="filter_option default_black_text">JBL<div class="green_no_chose_flag" onclick="SetFilterOption(event)"></div></div>
+                    <div class="filter_option default_black_text">Bose<div class="green_no_chose_flag" onclick="SetFilterOption(event)"></div></div>
+                    <div class="filter_option default_black_text">Nest<div class="green_no_chose_flag" onclick="SetFilterOption(event)"></div></div>
+                </section>
+                <section class="filter">
+          
+                        <div class="filter_head default_black_text">CONDITION </div>
+                        <div class="filter_option default_black_text">New<div class="green_no_chose_flag" onclick="SetFilterOption(event)"></div></div>
+                        <div class="filter_option default_black_text">Manufacturer Refurbished<div class="green_no_chose_flag" onclick="SetFilterOption(event)"></div></div>
+                        <div class="filter_option default_black_text">Seller Refurbished<div class="green_no_chose_flag" onclick="SetFilterOption(event)"></div></div>
+                        <div class="filter_option default_black_text">Used<div class="green_no_chose_flag" onclick="SetFilterOption(event)"></div></div>
+                        <div class="filter_option default_black_text">For Parts or not Working<div class="green_no_chose_flag" onclick="SetFilterOption(event)"></div></div>
+                </section>
+            </aside>
+
+            <section class="products_bar">
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+                <div class="product big_product">
+                    <div class="big_product_info_block">
+                            <div class="product_name name_big_product">Apple TV 32GB</div>
+                            <div class="capsul_right">BUY NOW</div>
+                            <div class="capsul_left">16 GB</div>
+                            <div class="product_color color_big_product">BLACK</div> 
+                            
+                    </div>
+                    <img src="./src/assets/images/big.png" class="big_image" alt="">
+                </div>
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+                <div class="product">
+                        <div class="product_price">49.99$</div>
+                        <div class="product_color">BLACK</div>
+                        <div class="product_name">Apple TV 32GB</div>                      
+                        <img src="src/assets/images/p1.png" alt=";)" class="product_image">           
+                </div>
+            </section>
+            <div class="horizontal block">
+        </div>
+        <nav class="paginator">
+            <div class="prev_button"><</div>
+            <div class="number_page">1</div>
+            <div class="number_page">2</div>
+            <div class="number_page">3</div>
+            <div class="chosen_number_page">4</div>
+            <div class="number_page">5</div>
+            <div class="number_page">6</div>
+            <div class="number_page">7</div>
+            <div class="number_page">8</div>
+            <div class="next_button">></div>
+        </nav>
+    </div>
+
+        <article class="best_sellers">
+            <header class="best_sellers_header default_black_text">
+                BEST SELLERS
+            </header>
+            <section>
+                <article class="best_item">
+                    <div class="best_item_prices">
+                        <div class="best_item_old_price">£39.99</div>
+                        <div class="best_item_new_price">£29.99</div>
+                    </div>
+                    <div class="best_item_color">GREEN</div>
+                    <div class="best_item_name">T-Shirt With a Print</div>
+                    <img src="src/assets/images/p1.png" alt=";)" class="best_item_image"> 
+                </article>
+                <article class="best_item">
+                        <div class="best_item_prices">
+                            <div class="best_item_old_price">£39.99</div>
+                            <div class="best_item_new_price">£29.99</div>
+                        </div>
+                        <div class="best_item_color">GREEN</div>
+                        <div class="best_item_name">T-Shirt With a Print</div>
+                        <img src="src/assets/images/p1.png" alt=";)" class="best_item_image"> 
+                    </article>
+                <article class="best_item">
+                        <div class="best_item_prices">
+                            <div class="best_item_old_price">£39.99</div>
+                            <div class="best_item_new_price">£29.99</div>
+                        </div>
+                        <div class="best_item_color">GREEN</div>
+                        <div class="best_item_name">T-Shirt With a Print</div>
+                        <img src="src/assets/images/p1.png" alt=";)" class="best_item_image"> 
+                    </article>
+                <article class="best_item">
+                        <div class="best_item_prices">
+                            <div class="best_item_old_price">£39.99</div>
+                            <div class="best_item_new_price">£29.99</div>
+                        </div>
+                        <div class="best_item_color">GREEN</div>
+                        <div class="best_item_name">T-Shirt With a Print</div>
+                        <img src="src/assets/images/p1.png" alt=";)" class="best_item_image"> 
+                    </article>
+            </section>
+        </article>
+
+    </section>
+
+    <article class="testimoials">
+        <header>
+            <div class="horizontal_block"><div class="main_title">What Our Customers Have to Say</div></div>
+            <div class="horizontal_block"></div><div class="sub_title">Couple of Words About This Stories Section</div></div>
+        </header>
+        <section class="comments">
+            <div class="horizontal_block">
+            <article class="comment">
+                <div class="user_view">
+                    <div class="user_avatar">
+                        <img src="src/assets/images/av.png" alt="wooman" class="user_image">
+                    </div>
+                    <div class="user_name">Celia Fields</div>
+                    <div class="user_status">UX Expert</div>
+                </div>
+                <div class="user_comment">This I have produced as a scantling 
+                        of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+                </div>
+            </article>
+            <article class="comment">
+                    <div class="user_view">
+                        <div class="user_avatar">
+                            <img src="src/assets/images/av.png" alt="wooman" class="user_image">
+                        </div>
+                        <div class="user_name">Celia Fields</div>
+                        <div class="user_status">UX Expert</div>
+                    </div>
+                    <div class="user_comment">This I have produced as a scantling 
+                            of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+                    </div>
+                </article>
+                <article class="comment">
+                        <div class="user_view">
+                            <div class="user_avatar">
+                                <img src="src/assets/images/av.png" alt="wooman" class="user_image">
+                            </div>
+                            <div class="user_name">Celia Fields</div>
+                            <div class="user_status">UX Expert</div>
+                        </div>
+                        <div class="user_comment">This I have produced as a scantling 
+                                of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+                        </div>
+                    </article>
+        </div>
+        </section>
+    </article>
+
+    <footer class="main_footer horizontal_block">
+        <div class="top_content">
+            <img src="./src/assets/images/namef.png" alt="" class="footer_logo">
+            <div class="footer_button">HOME</div>
+            <div class="footer_button">SHOP</div>
+            <div class="footer_button">TEAM</div>
+            <div class="footer_button">ABOUT US</div>
+            <div class="footer_button">CONTACTS</div>
+            <img src="./src/assets/images/goo.png" alt="" class="link_logo">
+            <img src="./src/assets/images/face.png" alt="" class="link_logo">
+            <img src="./src/assets/images/twit.png" alt="" class="link_logo">
+        </div>
+        <div class="bottom_content">
+            <div class="footer_quote">
+                She gave my mother such a turn, that I have always been convinced
+                 I am indebted to Miss Betsey for having been born on a Friday.
+            </div>
+            <div class="business_information">PRIVACY POLICY</div>
+            <div class="business_information">TERMS AND CONDITIONS</div>
+        </div>
+    </footer>
+  </body>
+</html>

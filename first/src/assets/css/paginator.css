@@ -1,0 +1,43 @@
+.paginator{
+    display: inline-block;
+    width: 1170px;
+    height: 90px;
+    background-color: #ffffff;
+    margin-top: 30px;;
+    overflow: hidden;
+    border-radius: 5px;
+    line-height: 90px;
+    vertical-align: middle;
+}
+
+.number_page{
+    display: inline-block;
+    font-size: 14px;
+    width: 50px;
+}
+
+.chosen_number_page{
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    border-radius: 50px;
+    box-shadow: 0 20px 40px rgba(168, 172, 185, 0.62);
+    font-size: 14px;
+    color: #b9bed1;
+    line-height: 48px;
+}
+
+.next_button, .prev_button{
+    width: 200px;
+    height: 90px;
+}
+
+.next_button{
+    float: right;
+    border-left: 1px solid #f0f2f7;
+}
+
+.prev_button{
+    float: left;
+    border-right: 1px solid #f0f2f7;
+}

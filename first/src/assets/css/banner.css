@@ -1,0 +1,81 @@
+.banner{
+    width: 100%;
+    height: 500px;
+    background-color: #1c1e23;
+    background-image: url("../images/iphone.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(50% + 240px);
+    background-size: 300px 500px;
+}
+
+.iphone_model{
+    float: left;
+    width: 340px;
+    text-align: left;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 23px;
+}
+
+.iphone_text{
+    width: 461px;
+    text-align: left;
+    float: left;
+    color: #ffffff;
+    font-family: "Crimson Text";
+    font-size: 16px;
+    margin-bottom: 61px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.iphone_img{
+    height: 500px;
+    width: 300px;
+}
+
+.buy_button{
+    float: left;
+    width: 165px;
+    height: 42px;;
+    line-height: 42px;
+    vertical-align: middle;
+    box-shadow: 0  0 40px 20px rgba(168, 173, 187, 0.072);
+    border-radius: 21px;
+    background-color: #2754eb;
+    letter-spacing: 1.1px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.bunner_puginator{float: left;
+    margin-top: 68px;;
+    width: 100%;
+    height: 8px;
+}
+
+.bunner_puginator_item{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 8px;
+    margin-left: 8px;
+    border: 2px solid #ffffff;
+    opacity: 0.5;
+}
+
+.chosen_bunner_puginator_item{
+    opacity: 1.0;
+    background-color: #fff;
+}
+
+.about_iphone{
+    float: left;
+    margin: 94px 117px 0px calc(50% - 487px);;
+    width: 461px;
+}
+
+.next_bunner{
+
+}
