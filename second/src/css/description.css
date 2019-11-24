@@ -1,0 +1,18 @@
+.description__path {
+  height: 34px;
+  width: 100%;
+}
+
+.description__title {
+  height: 80px;
+  width: 100%;
+}
+
+.description__bunner {
+  height: 416px;
+  width: 100%;
+  background-image: url("../assets/image/bunner1.png");
+  background-repeat: no-repeat;
+  background-position-y: 75%;
+  background-size: 100%;
+}

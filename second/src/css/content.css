@@ -1,0 +1,36 @@
+.main-content {
+  width: 100%;
+  display: flex;
+}
+
+.results {
+  width: 50%;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 8px;
+}
+
+.result {
+  display: block;
+  width: 211px;
+  height: 245px;
+  background-color: blue;
+}
+
+.results_result__img {
+  height: 140px;
+  width: 211px;
+}
+
+.results_result__name {
+  text-align: left;
+  font-family: "Actor";
+  font-size: 19px;
+  line-height: 22px;
+  color: #1c2e36;
+}
+
+.results_result__name::after {
+  content: " Tour with Skip-the-Line Access";
+}

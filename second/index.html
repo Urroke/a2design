@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @import url("./src/css/global.css");
+      @import url("./src/css/header.css");
+      @import url("./src/css/description.css");
+      @import url("./src/css/filter.css");
+      @import url("./src/css/content.css");
+      @import url("./src/css/map.css");
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css?family=Actor|Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="./src/assets/js/index.js"></script>
+  </head>
+
+  <body>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = { lat: 14.009454, lng: 120.996171 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+    <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASa6KEoHw0dqNh_llqOXFXZ3cwReYiP2U&callback=initMap"
+    ></script>
+    <header class="header">
+      <img src="src/assets/image/name.svg" alt="sity" class="page-name" />
+      <form class="header__input-form">
+        <input type="text" class="header__name-input" />
+        <select name="city" id="" class="header__city-selector"></select>
+      </form>
+      <nav class="sub-header">
+        <button class=""></button>
+        <button class=""></button>
+        <button class=""></button>
+        <button class=""></button>
+        <button class=""></button>
+      </nav>
+    </header>
+
+    <section class="description">
+      <aside class="description__path"></aside>
+      <h1 class="description__title"></h1>
+      <div class="description__bunner"></div>
+    </section>
+
+    <aside class="filter">
+      <h2 class="filter__what-we-filter"></h2>
+      <select
+        name=""
+        id=""
+        class="filter__selector filter__selector_close"
+      ></select>
+    </aside>
+
+    <section class="main-content">
+      <div class="main-content__sub-info"></div>
+      <section class="results">
+        <a href="" class="result">
+          <img src="./src/assets/image/place.png" alt="musem" class="results_result__img">
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__name">NYC Museum of Art</span>
+        </a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"></a>
+      </section>
+      <section class="map" id="map"></aside>
+      </section>
+  </body>
+</html>

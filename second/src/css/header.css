@@ -1,0 +1,15 @@
+.header {
+  background-color: #0084ba;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+.sub-header {
+  background-color: #0098d7;
+  height: 40px;
+  width: 100%;
+  top: 80px;
+  position: fixed;
+}
