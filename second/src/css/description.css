@@ -1,18 +1,140 @@
+@keyframes move_r {
+  from{margin-left: -100%; } 
+  98%{margin-left: 0%;}
+  to {margin-left: 0%; }
+}
+
+@keyframes move_l {
+  from{margin-left: 0%; } 
+
+  to {margin-left: -100%; }
+}
+
 .description__path {
+  padding-left: 29px;
+  box-sizing: border-box;
   height: 34px;
   width: 100%;
+  margin-top: 120px;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 34px;
+  vertical-align: middle;
 }
 
 .description__title {
+  padding-left: 29px;
+  box-sizing: border-box;
   height: 80px;
   width: 100%;
+  font-family: "Actor";
+  font-size: 40px;
+  line-height: 72px;
+  vertical-align: middle;
 }
 
 .description__bunner {
+  display: flex;
+  align-items : center;
+  justify-content: flex-start;
+  flex-direction: row;
   height: 416px;
   width: 100%;
-  background-image: url("../assets/image/bunner1.png");
-  background-repeat: no-repeat;
-  background-position-y: 75%;
-  background-size: 100%;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.description__img{
+  width: 100%;
+  display: none;
+  
+}
+
+.description__img_active_semi{
+  display: block;
+  order: 0;
+}
+
+.description__img_active_move_r{
+  display: block;
+  order: -1;
+  animation: move_r 2.04s 1;
+}
+
+.description__img_active_move_l{
+  display: block;
+  order: -1;
+  animation: move_l 2.04s 1;
+}
+
+.description__slide-button{
+  position: absolute;
+  background-image: url("../assets/image/click.png");
+  width: 50px;
+  height: 50px;
+  top: 467px;
+}
+
+.description__slide-button_direct_left{
+  left: 44px;
+  transform: rotate(180deg)
+}
+
+.description__slide-button_direct_right{
+  right: 44px;
+}
+
+@media (max-width: 1180px){
+  .description__path{
+    margin-top: 80px;
+  }
+  .description__slide-button{
+    top: 427px;
+  }
+}
+
+@media (max-width: 1000px){
+  .description__bunner{
+    height: 340px;
+    padding-bottom: 20px;
+  }
+  .description__title {
+    height: 73px;
+    line-height: 51px;
+    font-size: 30px;
+  }
+  .description__path{
+    font-size: 13px;
+  }
+  .description__slide-button{
+    top: 342px;
+  }
+}
+
+@media (max-width: 775px){
+  .description__path{
+    font-size: 12px;
+    margin-top: 48px;
+  }
+  .description__title {
+    height: 45px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .description__bunner{
+    height: 243px;
+    width: calc(100% + 22px);
+    margin-left: -22px;;
+    padding-bottom:0;
+  }
+  .description__slide-button{
+    top: 224px;
+  }
+  .description__slide-button_direct_left{
+    left: 0px;
+  }
+  
+  .description__slide-button_direct_right{
+    right: 0px;
+  }
 }

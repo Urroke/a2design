@@ -5,17 +5,20 @@
 
 .results {
   width: 50%;
-  justify-content: space-around;
+  box-sizing: border-box;
+  justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
   padding-left: 8px;
 }
 
 .result {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: content-box;
   width: 211px;
   height: 245px;
-  background-color: blue;
+  padding: 0px 6px 40px 6px;
 }
 
 .results_result__img {
@@ -24,13 +27,77 @@
 }
 
 .results_result__name {
+  align-self: flex-start;
   text-align: left;
   font-family: "Actor";
   font-size: 19px;
+  margin-top: 13px;
   line-height: 22px;
   color: #1c2e36;
 }
 
 .results_result__name::after {
   content: " Tour with Skip-the-Line Access";
+}
+
+.results_result__price{
+  align-self: flex-end;
+  font-family: "Actor";
+  font-size: 18px;
+  line-height: 21px;
+  color: #0084BA;;
+}
+
+@media (max-width: 990px) {
+  .result {  
+    width: 163px;
+    height: 251px;
+  }
+
+  .results_result__img {
+    height: 114px;
+    width: 163px;
+  }
+  .results_result__name {    
+    font-size: 16px;
+  }
+  .results_result__price{    
+    font-size: 16px;
+  }
+  .results {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 775px){
+  .result {  
+    width: 130px;
+    height: 180px;
+  }
+
+  .results_result__img {
+    height: 88.6px;
+    width: 130px;
+  }
+  .results_result__name {    
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .results_result__price{    
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  .map{
+    display: none;
+  }
+
+  .results{
+    padding: 0px 20px;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
