@@ -1,4 +1,15 @@
 .map {
+  width: 100%;
+  height: calc(100vh - 167px) ;
+}
+
+.map-container{
   width: 50%;
-  align-self: stretch;
+  height: 700px;
+  z-index: 3;
+}
+@media (max-width: 760px){
+  .map-container{
+    display: none;
+  }
 }

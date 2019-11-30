@@ -5,25 +5,23 @@
 
 .results {
   width: 50%;
-  box-sizing: border-box;
-  justify-content: space-evenly;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 8px;
+  padding: 0px 10px 0px 10px;
 }
 
 .result {
   display: flex;
   flex-wrap: wrap;
   box-sizing: content-box;
-  width: 211px;
-  height: 245px;
-  padding: 0px 6px 40px 6px;
+  width: calc(33.33% - 20px);
+  padding: 0px 10px 40px 10px;
+  align-self: stretch;
 }
 
 .results_result__img {
-  height: 140px;
-  width: 211px;
+  width: 100%;
 }
 
 .results_result__name {
@@ -45,43 +43,55 @@
   font-family: "Actor";
   font-size: 18px;
   line-height: 21px;
+  margin-top: 27px;
   color: #0084BA;;
+}
+
+.main-content__sub-info{
+  display: flex;
+  height: 57px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600px;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+}
+
+.main-content__count-results, .main-content__sort-button{
+  font-size: 14px;
+  line-height: 18px;
+  color: #1C2E36;
+}
+
+.main-content__sort-button{
+  font-size: 14px;
+  line-height: 18px;
+  color: #1C2E36;
+}
+.main-content__sort-arrow{
+  height: 8px;
+  width: 12px;
 }
 
 @media (max-width: 990px) {
   .result {  
-    width: 163px;
-    height: 251px;
+    width: calc(50% - 20px);
   }
 
-  .results_result__img {
-    height: 114px;
-    width: 163px;
-  }
   .results_result__name {    
     font-size: 16px;
   }
   .results_result__price{    
     font-size: 16px;
   }
-  .results {
-    width: 50%;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
-@media (max-width: 775px){
+@media (max-width: 760px){
   .result {  
-    width: 130px;
-    height: 180px;
+    width: calc(50% - 20px);
   }
 
-  .results_result__img {
-    height: 88.6px;
-    width: 130px;
-  }
   .results_result__name {    
     font-size: 14px;
     line-height: 16px;
@@ -90,14 +100,7 @@
     font-size: 12px;
     line-height: 21px;
   }
-
-  .map{
-    display: none;
-  }
-
   .results{
-    padding: 0px 20px;
-    justify-content: space-between;
     width: 100%;
   }
 }

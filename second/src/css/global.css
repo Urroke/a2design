@@ -3,6 +3,17 @@ body {
   font-family: "Source Sans Pro";
 }
 
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+select{
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 h1,
 h2,
 h3 {
