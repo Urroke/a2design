@@ -7,7 +7,7 @@
   background-color: #fff;
 }
 
-.filter-block__filters{
+.filter-block__filters {
   display: flex;
   flex-wrap: wrap;
   padding: 12px 0px 0px 26px;
@@ -15,22 +15,22 @@
   box-sizing: border-box;
 }
 
-.filter-block__what-we-filter{
+.filter-block__what-we-filter {
   align-self: flex-start;
   font-family: "Actor";
   font-size: 24px;
   line-height: 57px;
   margin-right: 38px;
-  color: #1C2E36;
+  color: #1c2e36;
 }
 
-.filter-block__selector{
+.filter-block__selector {
   font-size: 14px;
   padding-left: 7px;
   line-height: 18px;
   color: #666666;
   height: 55px;
-  border: 1px solid #C2C2C2;
+  border: 1px solid #c2c2c2;
   box-sizing: border-box;
   border-radius: 3px;
   background-image: url("../assets/image/arr1.png");
@@ -40,30 +40,29 @@
   background-size: 12px;
 }
 
-.filter-block__selector_name_subcategories{
+.filter-block__selector_name_subcategories {
   width: 127px;
-  
 }
 
-.filter-block__selector_name_neighborhoods{
+.filter-block__selector_name_neighborhoods {
   width: 160px;
 }
 
-.filter-block__selector_name_duration{
+.filter-block__selector_name_duration {
   width: 104px;
   margin: 0px 16px 0px 16px;
   align-self: flex-end;
 }
 
-.filter-block__interlayer2{
+.filter-block__interlayer2 {
   flex-grow: 1;
 }
 
-.filter-block__button{
+.filter-block__button {
   display: none;
 }
 
-.filter-block__interlayer3{
+.filter-block__interlayer3 {
   flex-grow: 0;
 }
 
@@ -75,18 +74,18 @@
   .filter-block__filters{
     width: 100%;
   }
-  .filter-block__interlayer2{
+  .filter-block__interlayer2 {
     flex-grow: 0;
   }
-  .filter-block__interlayer1{
+  .filter-block__interlayer1 {
     flex-grow: 1;
   }
-  .filter-block__selector_name_neighborhoods{
+  .filter-block__selector_name_neighborhoods {
     margin-left: 12px;
   }
-  .filter-block__selector_name_duration{
-    margin-left: 12px; 
-   }
+  .filter-block__selector_name_duration {
+    margin-left: 12px;
+  }
 }
 
 @media (max-width: 760px){
@@ -94,41 +93,41 @@
     display: none;
   }
 
-  .filter-block__what-we-filter{
+  .filter-block__what-we-filter {
     width: 100%;
   }
 
-  .filter-block__button{
+  .filter-block__button {
     display: block;
     height: 32px;
     font-size: 12px;
     line-height: 15px;
     color: #666666;
-    border: 1px solid #C2C2C2;
+    border: 1px solid #c2c2c2;
     box-sizing: border-box;
     border-radius: 3px;
     padding: 0px 8px;
   }
-  .filter-block__interlayer3{
+  .filter-block__interlayer3 {
     flex-grow: 1;
   }
-  .filter-block__interlayer1{
+  .filter-block__interlayer1 {
     flex-grow: 0;
   }
   .filter-block {
     border-bottom: none;
     height: 108px;
-    
   }
-  .filter-block__filters{
+  .filter-block__filters {
     padding-right: 26px;
   }
 }
 
-.sider-filter-block{
+.sider-filter-block {
   display: none;
   width: 100%;
   position: fixed;
+  overflow: scroll;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.71);
   height: 100%;
@@ -139,32 +138,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: flex-start;
   width: 273px;
-  height: 100%;
+  min-height: 100vh;
   background-color: #fff;
   margin-left: calc(100% - 273px);
   box-sizing: border-box;
   padding: 0px 21px 0px 14px;
 }
 
-.sider-filter-block__filter-close{
+.sider-filter-block__filter-close {
   text-align: right;
   height: 50px;
   font-size: 12px;
   line-height: 50px;
   font-weight: 600;
-  color: #1C2E36;
+  color: #1c2e36;
   margin-left: calc(100% - 40px);
 }
 
-.sider-filter-block__options{
+.sider-filter-block__options {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   padding: 15px 5px 15px 0px;
 }
 
-.sider-filter-block__option-ap{
+.sider-filter-block__option-ap {
   height: 12px;
   width: 12px;
   margin-right: 10px;
@@ -173,7 +173,7 @@
   background-size: 12px 12px;
 }
 
-.sider-filter-block__option{
+.sider-filter-block__option {
   width: calc(100% - 23px);
   margin-bottom: 20;
   font-size: 16px;
