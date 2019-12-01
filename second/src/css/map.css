@@ -1,15 +1,19 @@
 .map {
   width: 100%;
-  height: calc(100vh - 167px) ;
+  height: 100%;
+  
 }
 
 .map-container{
   width: 50%;
-  height: 700px;
+  height: calc(100vh - 164px) ;
   z-index: 3;
 }
+
 @media (max-width: 760px){
   .map-container{
     display: none;
+    width: 100%;
+    height: calc(100vh - 47px) ;
   }
 }

@@ -73,41 +73,43 @@
 
     <aside class="sider-filter-block" id="filter">
       <section class="sider-filter-block__filter">
-        <button class="sider-filter-block__filter-close" onclick="openCloseFilter(false)">Filter ×</button>
+          <button class="sider-filter-block__filter-close" onclick="openCloseFilter(false)">Filter ×</button>
           <div class="sider-filter-block__chapt">
-          <h3 class="sider-filter-block__name-chept">Subcategories</h3>
+          <h3 class="sider-filter-block__name-chapt">Subcategories</h3><img src="./src/assets/image/sy.png" alt="-" class="sider-filter-option__line"/>
           <section class="sider-filter-block__options">
-              <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/> <span class="sider-filter-block__option"> Art Museums</span>
-              <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-              <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-              <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div> <span class="sider-filter-block__option"> Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
           </section>
           </div>      
           <div class="sider-filter-block__chapt">
-              <h3 class="sider-filter-block__name-chept">Neighborhoods</h3>
-              <section class="sider-filter-block__options">
-                  <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-                  <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-                  <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-              </section>
-              </div>      
-              <div class="sider-filter-block__chapt">
-                  <h3 class="sider-filter-block__name-chept">Duration</h3>
-                  <section class="sider-filter-block__options">
-                      <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-                      <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-                      <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-                      <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-                      <img src="src/assets/image/check.png" class="sider-filter-block__option-ap"/><span class="sider-filter-block__option">Art Museums</span>
-                  </section>
-            </div>         
+            <h3 class="sider-filter-block__name-chapt">Neighborhoods</h3><img src="./src/assets/image/sy.png" alt="-" class="sider-filter-option__line"/>
+            <section class="sider-filter-block__options">
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+            </section>
+          </div>      
+          <div class="sider-filter-block__chapt sider-filter-block__chapt_number_last">
+            <h3 class="sider-filter-block__name-chept">Duration</h3><img src="./src/assets/image/sy.png" alt="-" class="sider-filter-option__line"/>
+            <section class="sider-filter-block__options">
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+            </section>
+          </div> 
+          <button class="sider-filter-block__button-reset">Reset</button>
+          <button class="sider-filter-block__button-go">Go</button>        
       </section>
     </aside>
 
     <aside class="filter-block" id="filter-block">
       <section class="filter-block__filters">
         <h2 class="filter-block__what-we-filter">Museums</h2>
-        <button class="filter-block__button">Map</button>
+        <button class="filter-block__button" onclick="openCloseMap(event)">Map</button>
         <div class="filter-block__interlayer3"></div>
         <button class="filter-block__button" onclick="openCloseFilter(true)">Filter ></button>
         <div class="filter-block__interlayer1"></div>
@@ -147,9 +149,9 @@
       </section>
     </aside>
 
-    <section class="main-content">
+    <main class="main-content">
       <section class="results">
-        <div class="main-content__sub-info">
+        <div class="main-content__sub-info" id="sub-info">
             <span class="main-content__count-results">38 Results</span>
             <button class="main-content__sort-button">Sort <img src="./src/assets/image/arr3.png" alt=">" class="main-content__sort-arrow"></button>
         </div>
@@ -188,6 +190,6 @@
           <span class="results_result__price">from $26 per person</span></a>
       </section>
       <section class="map-container" id="map-container"><div class="map" id="map"></div></section>
-    </section>
+    </main>
   </body>
 </html>
