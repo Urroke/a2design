@@ -3,6 +3,12 @@ body {
   font-family: "Source Sans Pro";
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3 {
@@ -16,11 +22,11 @@ h3 {
   border: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-button{
+button {
   padding: 0px;
   margin: 0px;
   border: none;
