@@ -53,6 +53,7 @@ function openCloseMap(event) {
   map.style.display = isMap ? "block" : "none";
   event.target.innerHTML = isMap ? "List" : "Map";
   mapActive = isMap;
+  if (mapActive) stickAll();
 }
 
 function stickComponent(sticked, stickTo, nextBlock) {
