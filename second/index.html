@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1" />
     <style>
       @import url("./src/css/global.css");
       @import url("./src/css/header.css");
@@ -35,19 +35,55 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASa6KEoHw0dqNh_llqOXFXZ3cwReYiP2U&callback=initMap"
     ></script>
     <header class="header" id="main-header">
-      <img src="src/assets/image/name.svg" alt="sity" class="header__page-name" />
+      <img
+        src="src/assets/image/name.svg"
+        alt="sity"
+        class="header__page-name"
+      />
       <form class="header__input-form">
-        <input type="text" class="header__input" placeholder="Find..."/>
-        <select name="city" id="" class="header__city-selector"><option value="none" hidden="">New York</option></select>
+        <input type="text" class="header__input" placeholder="Find..." />
+        <select name="city" id="" class="header__city-selector"
+          ><option value="none" hidden="">New York</option></select
+        >
       </form>
       <div class="header__interlayer"></div>
       <nav class="header__links">
-        <img src="./src/assets/image/q (1).png" alt=""class="header__modile-icon" />
-        <img src="./src/assets/image/wfind.png" alt="" class="header__modile-icon"/>
-        <a class="header__link"><img src="./src/assets/image/quest.png" alt="help" class="header__link-icon"></a><span class="header__link-name">Help</span>
-        <a class="header__link"><img src="./src/assets/image/star.png" alt="favorits" class="header__link-icon"></a><span class="header__link-name">Favorites</span>
-        <a class="header__link"><img src="./src/assets/image/shop.png" alt="cart" class="header__link-icon"></a><span class="header__link-name header__link-name_name_cart">Cart</span>
-        <a class="header__link"><img src="./src/assets/image/user.png" alt="autorization" class="header__link-icon header__link-icon_name-reg-log"></a><span class="header__link-name header__link-name_name_log-reg">Log In | Register</span>
+        <img
+          src="./src/assets/image/q (1).png"
+          alt=""
+          class="header__modile-icon"
+        />
+        <img
+          src="./src/assets/image/wfind.png"
+          alt=""
+          class="header__modile-icon"
+        />
+        <a class="header__link"
+          ><img
+            src="./src/assets/image/quest.png"
+            alt="help"
+            class="header__link-icon"/></a
+        ><span class="header__link-name">Help</span>
+        <a class="header__link"
+          ><img
+            src="./src/assets/image/star.png"
+            alt="favorits"
+            class="header__link-icon"/></a
+        ><span class="header__link-name">Favorites</span>
+        <a class="header__link"
+          ><img
+            src="./src/assets/image/shop.png"
+            alt="cart"
+            class="header__link-icon"/></a
+        ><span class="header__link-name header__link-name_name_cart">Cart</span>
+        <a class="header__link"
+          ><img
+            src="./src/assets/image/user.png"
+            alt="autorization"
+            class="header__link-icon header__link-icon_name-reg-log"/></a
+        ><span class="header__link-name header__link-name_name_log-reg"
+          >Log In | Register</span
+        >
       </nav>
       <nav class="sub-header">
         <button class="sub-header__button">TOURS</button>
@@ -62,56 +98,150 @@
     <section class="description">
       <aside class="description__path">Category > Museums</aside>
       <h1 class="description__title">New York City Museum</h1>
-      <button class="description__slide-button description__slide-button_direct_left" onclick="slide(1)"></button>
-        <button class="description__slide-button description__slide-button_direct_right" onclick="slide(-1)"></button>
-      <section class="description__bunner" id="main_bunner" >
-        <img src="./src/assets/image/bunner1.png" alt="musem" class="description__img">
-        <img src="./src/assets/image/bunner2.png" alt="musem" class="description__img description__img_active_semi">
-        <img src="./src/assets/image/bunner3.png" alt="musem" class="description__img">
+      <button
+        class="description__slide-button description__slide-button_direct_left"
+        onclick="slide(1)"
+      ></button>
+      <button
+        class="description__slide-button description__slide-button_direct_right"
+        onclick="slide(-1)"
+      ></button>
+      <section class="description__bunner" id="main_bunner">
+        <img
+          src="./src/assets/image/bunner1.png"
+          alt="musem"
+          class="description__img"
+        />
+        <img
+          src="./src/assets/image/bunner2.png"
+          alt="musem"
+          class="description__img description__img_active_semi"
+        />
+        <img
+          src="./src/assets/image/bunner3.png"
+          alt="musem"
+          class="description__img"
+        />
       </section>
     </section>
 
-    <aside class="sider-filter-block" id="filter">
-      <section class="sider-filter-block__filter">
-          <button class="sider-filter-block__filter-close" onclick="openCloseFilter(false)">Filter ×</button>
-          <div class="sider-filter-block__chapt">
-          <h3 class="sider-filter-block__name-chapt">Subcategories</h3><img src="./src/assets/image/sy.png" alt="-" class="sider-filter-option__line"/>
+    <aside class="sider-filter-block" id="mobile-filter">
+      <form class="sider-filter-block__filter">
+        <button
+          class="sider-filter-block__filter-close"
+          onclick="openCloseFilter(false)"
+        >
+          Filter ×
+        </button>
+        <div class="sider-filter-block__chapt">
+          <h3 class="sider-filter-block__name-chapt">Subcategories</h3>
+          <img
+            src="./src/assets/image/sy.png"
+            alt="-"
+            class="sider-filter-option__line"
+          />
           <section class="sider-filter-block__options">
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div> <span class="sider-filter-block__option"> Art Museums</span>
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option"> Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
           </section>
-          </div>      
-          <div class="sider-filter-block__chapt">
-            <h3 class="sider-filter-block__name-chapt">Neighborhoods</h3><img src="./src/assets/image/sy.png" alt="-" class="sider-filter-option__line"/>
-            <section class="sider-filter-block__options">
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-            </section>
-          </div>      
-          <div class="sider-filter-block__chapt sider-filter-block__chapt_number_last">
-            <h3 class="sider-filter-block__name-chept">Duration</h3><img src="./src/assets/image/sy.png" alt="-" class="sider-filter-option__line"/>
-            <section class="sider-filter-block__options">
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-              <div class="sider-filter-block__option-ap" onclick="setFilterOption(event)"></div><span class="sider-filter-block__option">Art Museums</span>
-            </section>
-          </div> 
-          <button class="sider-filter-block__button-reset">Reset</button>
-          <button class="sider-filter-block__button-go">Go</button>        
-      </section>
+        </div>
+        <div class="sider-filter-block__chapt">
+          <h3 class="sider-filter-block__name-chapt">Neighborhoods</h3>
+          <img
+            src="./src/assets/image/sy.png"
+            alt="-"
+            class="sider-filter-option__line"
+          />
+          <section class="sider-filter-block__options">
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+          </section>
+        </div>
+        <div
+          class="sider-filter-block__chapt sider-filter-block__chapt_number_last"
+        >
+          <h3 class="sider-filter-block__name-chept">Duration</h3>
+          <img
+            src="./src/assets/image/sy.png"
+            alt="-"
+            class="sider-filter-option__line"
+          />
+          <section class="sider-filter-block__options">
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+            <div
+              class="sider-filter-block__option-ap"
+              onclick="setFilterOption(event)"
+            ></div>
+            <span class="sider-filter-block__option">Art Museums</span>
+          </section>
+        </div>
+        <button class="sider-filter-block__button-reset" type="reset">
+          Reset
+        </button>
+        <button class="sider-filter-block__button-go" type="submit">Go</button>
+      </form>
     </aside>
 
     <aside class="filter-block" id="filter-block">
       <section class="filter-block__filters">
         <h2 class="filter-block__what-we-filter">Museums</h2>
-        <button class="filter-block__button" onclick="openCloseMap(event)">Map</button>
+        <button class="filter-block__button" onclick="openCloseMap(event)">
+          Map
+        </button>
         <div class="filter-block__interlayer3"></div>
-        <button class="filter-block__button" onclick="openCloseFilter(true)">Filter ></button>
+        <button class="filter-block__button" onclick="openCloseFilter(true)">
+          Filter >
+        </button>
         <div class="filter-block__interlayer1"></div>
         <select
           name="Subcategories"
@@ -129,11 +259,11 @@
           class="filter-block__selector filter-block__selector_name_neighborhoods"
         >
           <option value="none" hidden="">Neighborhoods</option>
-          <option >Flatiron</option>
-          <option >Chelsea</option>
-          <option >Outdoor</option>
-          <option >Art</option>
-          <option >History</option>
+          <option>Flatiron</option>
+          <option>Chelsea</option>
+          <option>Outdoor</option>
+          <option>Art</option>
+          <option>History</option>
         </select>
         <select
           name="Duration"
@@ -141,10 +271,10 @@
           class="filter-block__selector filter-block__selector_name_duration"
         >
           <option value="none" hidden="">Duration</option>
-          <option >Art</option>
-          <option >History</option>
-          <option >Outdoor</option>
-          <option >Art</option>
+          <option>Art</option>
+          <option>History</option>
+          <option>Outdoor</option>
+          <option>Art</option>
         </select>
       </section>
     </aside>
@@ -152,44 +282,155 @@
     <main class="main-content">
       <section class="results">
         <div class="main-content__sub-info" id="sub-info">
-            <span class="main-content__count-results">38 Results</span>
-            <button class="main-content__sort-button">Sort <img src="./src/assets/image/arr3.png" alt=">" class="main-content__sort-arrow"></button>
+          <span class="main-content__count-results">38 Results</span>
+          <button class="main-content__sort-button">
+            Sort
+            <img
+              src="./src/assets/image/arr3.png"
+              alt=">"
+              class="main-content__sort-arrow"
+            />
+          </button>
         </div>
         <a href="" class="result">
-          <img src="./src/assets/image/place.png" alt="musem" class="results_result__img">
+          <img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
           <h3 class="results_result__name">NYC Museum of Art</h3>
           <span class="results_result__price">from $26 per person</span>
         </a>
-        <a href="" class="result"><img src="./src/assets/image/place3.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place1.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place2.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
-        <a href="" class="result"><img src="./src/assets/image/place.png" alt="musem" class="results_result__img"><h3 class="results_result__name">NYC Museum of Art</h3>
-          <span class="results_result__price">from $26 per person</span></a>
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place3.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place1.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place2.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
+        <a href="" class="result"
+          ><img
+            src="./src/assets/image/place.png"
+            alt="musem"
+            class="results_result__img"
+          />
+          <h3 class="results_result__name">NYC Museum of Art</h3>
+          <span class="results_result__price">from $26 per person</span></a
+        >
       </section>
-      <section class="map-container" id="map-container"><div class="map" id="map"></div></section>
+      <section class="map-container" id="map-container">
+        <div class="map" id="map"></div>
+      </section>
     </main>
   </body>
 </html>
