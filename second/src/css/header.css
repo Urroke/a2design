@@ -29,6 +29,13 @@
   margin-right: 7px;
 }
 
+.header__modile-icon{
+  height: 20px;
+  width: 20px;
+  margin-right: 28px;
+  display: none;
+}
+
 .header__page-name{
   height: 50px;
   margin-right: 67px;
@@ -42,7 +49,6 @@
   height: 55px;
   width: 400px;
   border: 1px solid #C2C2C2;
-  box-sizing: border-box;
   padding-left: 47px;
   border-radius: 3px;
   font-size: 16px;
@@ -58,10 +64,16 @@
   background: none;
   border: none;
   font-weight: 400;
+  width: 83px;
   font-size: 16px;
   line-height: 20px;
   margin-left: 21px;
   color: #FFFFFF;
+  background-image: url("../assets/image/arr2.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  background-size: 10px;
 }
 
 .header__link-name{
@@ -100,7 +112,7 @@
   color: #FFFFFF;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1200px) {
   .header{
     padding-left: 80px;
   }
@@ -166,18 +178,41 @@
   }
 }
 
-@media (max-width: 775px){
+.header__links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 760px){
+  .header__modile-icon{
+    display: block;
+  }
   .header__input{
     display: none;
   }
   .header{
     height: 48px;
+    padding-right: 12px;
+    padding-left: 56px;
+  }
+  .header__link-name{
+    display: none;
   }
 
+  .header__link-icon{
+    height: 20px;
+    width: 20px;
+  }
   .sub-header{
     padding-top: 48px;
     height: 48px;
+    width: 150px;
+    background-position-x: 15px;
     background-position-y: 14px;
     background-size: 21px 21px;
+  }
+  .header__page-name{
+    height: 40px;
   }
 }

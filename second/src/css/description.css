@@ -58,13 +58,13 @@
 .description__img_active_move_r{
   display: block;
   order: -1;
-  animation: move_r 2.04s 1;
+  animation: move_r 1.04s 1;
 }
 
 .description__img_active_move_l{
   display: block;
   order: -1;
-  animation: move_l 2.04s 1;
+  animation: move_l 1.04s 1;
 }
 
 .description__slide-button{
@@ -111,7 +111,7 @@
   }
 }
 
-@media (max-width: 775px){
+@media (max-width: 760px){
   .description__path{
     font-size: 12px;
     margin-top: 48px;

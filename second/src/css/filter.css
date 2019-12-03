@@ -1,7 +1,10 @@
 .filter-block {
+  position: relative;
   height: 87px;
   width: 100%;
-  border-bottom: 2px solid #e2e2e2;
+  border-bottom: 2px solid #E2E2E2;
+  z-index: 3;
+  background-color: #fff;
 }
 
 .filter-block__filters {
@@ -16,20 +19,25 @@
   align-self: flex-start;
   font-family: "Actor";
   font-size: 24px;
-  line-height: 46px;
-  margin-top: 2px;
+  line-height: 57px;
   margin-right: 38px;
   color: #1c2e36;
 }
 
 .filter-block__selector {
   font-size: 14px;
+  padding-left: 7px;
   line-height: 18px;
   color: #666666;
   height: 55px;
   border: 1px solid #c2c2c2;
   box-sizing: border-box;
   border-radius: 3px;
+  background-image: url("../assets/image/arr1.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 7px);
+  background-position-y: 50%;
+  background-size: 12px;
 }
 
 .filter-block__selector_name_subcategories {
@@ -58,8 +66,12 @@
   flex-grow: 0;
 }
 
-@media (max-width: 1180px) {
-  .filter-block__filters {
+.filter-block__option{
+  width: 10px;
+}
+
+@media (max-width: 1200px) {
+  .filter-block__filters{
     width: 100%;
   }
   .filter-block__interlayer2 {
@@ -76,8 +88,8 @@
   }
 }
 
-@media (max-width: 775px) {
-  .filter-block__selector {
+@media (max-width: 760px){
+  .filter-block__selector{
     display: none;
   }
 
@@ -119,11 +131,16 @@
   top: 0px;
   background-color: rgba(0, 0, 0, 0.71);
   height: 100%;
-  z-index: 3;
+  z-index: 4;
 }
 
-.sider-filter-block__filter {
+.sider-filter-block__filter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
   width: 273px;
+  min-height: 100vh;
   background-color: #fff;
   margin-left: calc(100% - 273px);
   box-sizing: border-box;
@@ -142,9 +159,7 @@
 
 .sider-filter-block__options {
   display: flex;
-  box-sizing: border-box;
   flex-wrap: wrap;
-  margin-bottom: 17px;
   width: 100%;
   padding: 15px 5px 15px 0px;
 }
@@ -154,13 +169,61 @@
   width: 12px;
   margin-right: 10px;
   align-self: center;
+  background-image: url("../assets/image/check.png");
+  background-size: 12px 12px;
 }
 
 .sider-filter-block__option {
   width: calc(100% - 23px);
-  align-self: center;
   margin-bottom: 20;
   font-size: 16px;
   line-height: 27px;
-  color: #1c2e36;
+  color: #1C2E36;
+}
+
+.sider-filter-block__option-ap_state_active{
+  background-image: url("../assets/image/checka.png");
+}
+
+.sider-filter-option__line{
+  width: 13px;
+  height: 4px;
+}
+
+.sider-filter-block__chapt{
+  margin-bottom: 17px;
+  border-bottom: 1px solid #ECECEC;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sider-filter-block__button-reset, .sider-filter-block__button-go{
+  width: calc(50% - 5px);
+  height: 48px;
+  text-align: center;
+  font-family: "Actor";
+  font-size: 16px;
+  line-height: 19px;
+  color: #0084BA;
+  border: 1px solid #0084BA;
+  border-radius: 3px;
+}
+
+.sider-filter-block__button-go{
+  background: #0084BA;
+  color: #fff;
+}
+
+.sider-filter-block__name-chapt{
+  font-family: "Actor";
+  font-size: 16px;
+  line-height: 25px;
+  width: calc(100% - 100px);
+}
+
+.sider-filter-block__chapt_number_last{
+  border: none;
+  margin-bottom: 18px;
 }
