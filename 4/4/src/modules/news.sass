@@ -1,0 +1,50 @@
+.news-list
+    display: flex
+    flex-wrap: wrap
+    width: 880px
+    justify-content: center
+    align-items: stretch
+
+.news-home
+    align-self: center
+    margin-left: 20px
+
+.news-home-button
+    width: 102px
+    height: 117px
+    background-image: url("../resource/img/arrow_back.png")
+    background-size: cover
+
+.news-list__caption
+    width: 571px
+    margin-left: calc(50% - 385px)
+    height: 155px
+    background: rgba(255, 255, 255, 0.95)
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25)
+    border-radius: 16px
+    font-style: normal
+    font-weight: 500
+    font-size: 42px
+    line-height: 42px
+    text-align: center
+    padding-top: 34px
+    color: #000000
+
+.news__support-class
+    display: flex
+    margin-top: 92px
+    justify-content: start
+    width: 100%
+    margin-bottom: 30px
+
+@media (max-width: 1000px)
+    .news-list__caption
+        width: 400px
+        margin-left: calc(50% - 300px)
+
+@media (max-width: 600px)
+    .news-list__caption
+        width: calc(100% - 162px)
+        font-size: 24px
+        line-height: 24px
+        margin-left: 20px
