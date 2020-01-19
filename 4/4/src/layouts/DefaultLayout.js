@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./defaultLayout.sass";
 
 class DefaultLayout extends React.Component {
@@ -19,7 +20,9 @@ class DefaultLayout extends React.Component {
           }}
           className="main-header"
         >
-          <h1 className="main-name">Grazie!</h1>
+          <Link to="/home" className="main-name">
+            <h1>Grazie!</h1>
+          </Link>
           <div className="main-icon"></div>
         </header>
         <div

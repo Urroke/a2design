@@ -1,19 +1,31 @@
 import React from "react";
 import "./news.sass";
 import News from "../components/news";
-
-import { Link, Redirect } from "react-router-dom";
+import Filter from "../components/filter";
+import Data from "./data.json";
+import { Link } from "react-router-dom";
 
 class NewsPage extends React.Component {
-  componentDidMount = () => {
-    const { GetNews } = this.props;
-    GetNews();
+  constructor(props) {
+    super(props);
+    this.state = {
+      viewedNewsType: { art: true, global: true, politics: true }
+    };
+  }
+
+  SetFilter = type => {
+    const copyViewedNewsType = this.state.viewedNewsType;
+    copyViewedNewsType[type] = !this.state.viewedNewsType[type];
+    this.setState({ viewedNewsType: copyViewedNewsType });
   };
 
   render() {
-    const { values } = this.props;
     return (
       <section className="news-list">
+        <Filter
+          SetFilter={this.SetFilter}
+          active={this.state.viewedNewsType}
+        ></Filter>
         <div className="news__support-class">
           <nav className="news-home">
             <Link to="/home">
@@ -24,9 +36,9 @@ class NewsPage extends React.Component {
             Most recent news from our users
           </h2>
         </div>
-        {values.map(el => (
-          <News value={el}></News>
-        ))}
+        {Data.map(
+          el => this.state.viewedNewsType[el.type] && <News value={el}></News>
+        )}
       </section>
     );
   }

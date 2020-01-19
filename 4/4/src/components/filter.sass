@@ -1,0 +1,39 @@
+.filters
+    height: 90px
+    background-color: #fdf0c5
+    border-radius: 10px 0px 0px 10px
+    width: 100px
+    box-shadow: 0px 3px  10px 1px #444444
+    position: fixed
+    display: flex
+    flex-wrap: wrap
+    left: calc(100% - 100px)
+    top: 148px
+    z-index: 0px
+
+.check__box
+    position: absolute
+    height: 20px
+    width: 20px
+    margin-left: -30px
+    background-image: url(../img/disable.png)
+    background-size: 100%
+    border-radius: 20px
+
+.check__input:checked + .check__box
+    background-image: url(../img/active.png)
+
+.check__box:hover
+    height: 21px
+    width: 21px
+    box-shadow: 0px 0px 5px #43c729
+
+.check__input
+    position: absolute
+    -webkit-appearance: none
+    appearance: none
+
+.check
+    width: 100px
+    align-self: center
+    padding-left: 40px

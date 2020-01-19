@@ -1,8 +1,8 @@
 import React from "react";
 import DefaultLayout from "./layouts/DefaultLayout.js";
 import { Redirect } from "react-router-dom";
-import HomePage from "./containers/HomePage";
-import NewsPage from "./containers/NewsPage";
+import HomePage from "./modules/HomePage";
+import NewsPage from "./modules/NewsPage";
 
 export default [
   {

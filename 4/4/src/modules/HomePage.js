@@ -1,6 +1,5 @@
 import React from "react";
 import "./home.sass";
-import { history } from "../helpers/history";
 import { Link } from "react-router-dom";
 
 class HomePage extends React.Component {
