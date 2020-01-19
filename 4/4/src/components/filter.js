@@ -26,6 +26,14 @@ class Filter extends React.Component {
             {types[el]}
           </label>
         ))}
+        <button
+          className="filters__reset"
+          onClick={() => {
+            SetFilter(false);
+          }}
+        >
+          Reset
+        </button>
       </section>
     );
   }

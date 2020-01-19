@@ -14,8 +14,13 @@ class NewsPage extends React.Component {
   }
 
   SetFilter = type => {
-    const copyViewedNewsType = this.state.viewedNewsType;
-    copyViewedNewsType[type] = !this.state.viewedNewsType[type];
+    let copyViewedNewsType = {};
+    if (type === false)
+      copyViewedNewsType = { art: false, global: false, politics: false };
+    else {
+      copyViewedNewsType = this.state.viewedNewsType;
+      copyViewedNewsType[type] = !this.state.viewedNewsType[type];
+    }
     this.setState({ viewedNewsType: copyViewedNewsType });
   };
 
