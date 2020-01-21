@@ -41,8 +41,8 @@ class NewsPage extends React.Component {
             Most recent news from our users
           </h2>
         </div>
-        {Data.map(
-          el => this.state.viewedNewsType[el.type] && <News value={el}></News>
+        {Data.filter(el => this.state.viewedNewsType[el.type]).map(
+          el => <News value={el}></News>
         )}
       </section>
     );
