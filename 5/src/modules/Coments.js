@@ -12,13 +12,17 @@ class Coments extends React.Component {
     let { coments } = this.props;
 
     if (coments.length !== 0 && coments[0].postId !== data.id) coments = []; //Чтобы не отображало коменты к посту открытому ранее
-
+    console.log(coments[0]);
     return (
       <article className="coments" onClick={enableComents}>
         <div className="coments__form">
           <Post data={data} id={id} username={username}></Post>
           {coments.map((el, index) => (
-            <div key={index}>{el.body}</div>
+            <div key={index} className="coment">
+              <a href={el.email} className="coment__email">{el.email}</a>
+              <h2 className="coment__title">{el.name}</h2>
+              <p className="coment__body">{el.body}</p>
+            </div>
           ))}
         </div>
       </article>
