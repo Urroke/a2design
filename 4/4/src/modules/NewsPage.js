@@ -18,7 +18,7 @@ class NewsPage extends React.Component {
     if (type === false)
       copyViewedNewsType = { art: false, global: false, politics: false };
     else {
-      copyViewedNewsType = this.state.viewedNewsType;
+      copyViewedNewsType = {...this.state.viewedNewsType};
       copyViewedNewsType[type] = !this.state.viewedNewsType[type];
     }
     this.setState({ viewedNewsType: copyViewedNewsType });
@@ -41,8 +41,8 @@ class NewsPage extends React.Component {
             Most recent news from our users
           </h2>
         </div>
-        {Data.map(
-          el => this.state.viewedNewsType[el.type] && <News value={el}></News>
+        {Data.filter(el => this.state.viewedNewsType[el.type]).map(
+          el => <News value={el}></News>
         )}
       </section>
     );
