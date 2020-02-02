@@ -17,9 +17,7 @@ class PeopleIdPage extends React.Component {
     SetUserPosts(id);
   }
   render() {
-    let { user, posts } = this.props;
-    if (!user) user = { username: "", name: "", email: "" };
-    if (posts.length !== 0 && posts[0].userId !== user.id) posts = [];
+    const { user, posts } = this.props;
     return (
       <main className="user-page">
         <User data={user}></User>

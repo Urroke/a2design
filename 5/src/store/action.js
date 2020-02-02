@@ -47,15 +47,19 @@ export const SetSingleUser = id => dispatch =>
     .then(res => res.json())
     .then(res => dispatch(SetUser(res[0])));
 
-export const SetUserPosts = id => dispatch =>
+export const SetUserPosts = id => dispatch => {
+  dispatch(SetSingleUserPosts([]));
   fetch("https://jsonplaceholder.typicode.com/posts?userId=" + id)
     .then(res => res.json())
     .then(res => dispatch(SetSingleUserPosts(res)));
+};
 
-export const SetPostComents = id => dispatch =>
+export const SetPostComents = id => dispatch => {
+  dispatch(SetComents([]));
   fetch("https://jsonplaceholder.typicode.com/comments?postId=" + id)
     .then(res => res.json())
     .then(res => dispatch(SetComents(res)));
+};
 
 export const SetAllPosts = () => dispatch =>
   fetch("https://jsonplaceholder.typicode.com/posts")

@@ -11,7 +11,6 @@ class Coments extends React.Component {
     const { data, username, id, enableComents } = this.props;
     let { coments } = this.props;
 
-    if (coments.length !== 0 && coments[0].postId !== data.id) coments = []; //Чтобы не отображало коменты к посту открытому ранее
     console.log(coments[0]);
     return (
       <article className="coments" onClick={enableComents}>

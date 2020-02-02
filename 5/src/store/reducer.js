@@ -9,7 +9,7 @@ import {
 import ColorMaker from "../helper/ColorMaker";
 
 const initialState = {
-  user: {},
+  user: { username: "", name: "", email: "" },
   users: [],
   posts: [],
   userListEmpty: true,
