@@ -19,20 +19,19 @@ class PeopleIdPage extends React.Component {
   render() {
     let { user, posts } = this.props;
     if (!user) user = { username: "", name: "", email: "" };
+    if (posts.length !== 0 && posts[0].userId !== user.id) posts = [];
     return (
       <main className="user-page">
         <User data={user}></User>
         <h2 className="user__latest-posts">Latest Posts</h2>
-        <section>
-          {posts.map((el, index) => (
-            <Post
-              data={el}
-              key={index}
-              username={user.username}
-              id={user.id}
-            ></Post>
-          ))}
-        </section>
+        {posts.map((el, index) => (
+          <Post
+            data={el}
+            key={index}
+            username={user.username}
+            id={user.id}
+          ></Post>
+        ))}
       </main>
     );
   }

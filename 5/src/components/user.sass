@@ -27,7 +27,7 @@
     vertical-align: middle
 
 .user__link
-    width: 600px
+    flex-grow: 1
     display: block
     margin-top: 40px
     font-size: 24px
@@ -35,7 +35,7 @@
     color: #787878
 
 .user__name
-    width: 827px
+    flex-grow: 1
     margin-top: 10px
     font-weight: 500
     font-size: 64px
@@ -51,9 +51,104 @@
     background-size: calc(100% + 1px)
 
 .user__user-name
-    width: 827px
+    flex-grow: 1
     font-weight: 500
     margin-top: 40px
     font-size: 24px
     line-height: 28px
     color: #787878
+
+@media (max-width: 1200px)
+    .user
+        width: calc( 100% - 120px )
+        height: 200px
+    .user__avatar
+        height: 120px
+        margin: 15px 25px 0px 25px
+        width: 120px
+        line-height: 120px
+        font-size: 48px
+    .user__name
+        margin-top: 0px
+        font-size: 36px
+    .user__link
+        margin-top: 0px
+    .user__user-name
+        margin-top: 10px
+    .user__footer
+        margin-top: 10px
+
+@media (max-width: 800px)
+    .user
+        width: calc( 100% - 120px )
+        height: 130px
+    .user__avatar
+        height: 30px
+        margin: 0px
+        width: 100%
+        border-radius: 0px
+        line-height: 30px
+        font-size: 28px
+    .user__name
+        line-height: 36px
+        margin-top: 0px
+        font-size: 24px
+        width: 100%
+        order: -1
+    .user__link
+        margin-top: 20px
+        line-height: 14px
+        width: 49%
+        order: 1
+        font-size: 14px
+    .user__user-name
+        margin-top: 20px
+        line-height: 14px
+        font-size: 14px
+        width: 49%
+        order: 1
+    .user__description
+        display: flex
+        width: 100%
+        text-align: center
+        flex-wrap: wrap
+    .user__footer
+        margin-top: 0px
+        height: 30px
+@media (max-width: 500px)
+    .user
+        width: calc( 100% - 60px )
+        height: 110px
+    .user__avatar
+        height: 22px
+        margin: 0px
+        width: 100%
+        border-radius: 0px
+        line-height: 22px
+        font-size: 22px
+    .user__name
+        line-height: 36px
+        margin-top: 0px
+        font-size: 18px
+        width: 100%
+        order: -1
+    .user__link
+        margin-top: 20px
+        line-height: 14px
+        width: 49%
+        order: 1
+        font-size: 10px
+    .user__user-name
+        margin-top: 20px
+        line-height: 14px
+        font-size: 10px
+        width: 49%
+        order: 1
+    .user__description
+        display: flex
+        width: 100%
+        text-align: center
+        flex-wrap: wrap
+    .user__footer
+        margin-top: 0px
+        height: 22px

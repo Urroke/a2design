@@ -12,12 +12,17 @@
     font-style: normal
 
 .coments__form
+    overflow-y: scroll
+    padding: 10px 60px 0px 60px
     width: 1098px
+    height: calc( 100vh - 120px)
     border-radius: 8px
     background: #ffffff
 
+.coments__form::-webkit-scrollbar
+    width: 0px
+
 .coment
-    padding: 0px 60px 0px 60px
     margin-top: 20px
     display: flex
     flex-wrap: wrap
@@ -40,3 +45,26 @@
     font-size: 24px
     line-height: 28px
     color: #000000
+
+.with-coments
+    margin-top: 0px
+    border-radius: 8px 8px 0px 0px
+    border-bottom: 1px solid #2e2e2e
+    box-shadow: 0px 0px 0px
+    padding-left: 0px
+    padding-right: 0px
+    width: 100%
+
+@media (max-width: 500px)
+    .coments__form
+        width: calc( 100% -  20px)
+        padding: 10px 30px 0px 30px
+@media (max-width: 500px)
+    .coment__email
+        font-size: 18px
+    .coment__title
+        font-size: 18px
+    .coment__body
+        font-size: 18px
+    .post
+        width: calc( 100% - 60px )

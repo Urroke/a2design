@@ -16,10 +16,17 @@ class Coments extends React.Component {
     return (
       <article className="coments" onClick={enableComents}>
         <div className="coments__form">
-          <Post data={data} id={id} username={username}></Post>
+          <Post
+            data={data}
+            id={id}
+            username={username}
+            className="with-coments"
+          ></Post>
           {coments.map((el, index) => (
             <div key={index} className="coment">
-              <a href={el.email} className="coment__email">{el.email}</a>
+              <a href={el.email} className="coment__email">
+                {el.email}
+              </a>
               <h2 className="coment__title">{el.name}</h2>
               <p className="coment__body">{el.body}</p>
             </div>

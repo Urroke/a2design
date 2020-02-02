@@ -10,7 +10,7 @@ class Post extends React.Component {
   }
   render() {
     const { title, body } = this.props.data;
-    const { id, username } = this.props;
+    const { id, username, className } = this.props;
     return this.state.openComents ? (
       <Coments
         data={this.props.data}
@@ -20,7 +20,7 @@ class Post extends React.Component {
       ></Coments>
     ) : (
       <article
-        className="post"
+        className={"post " + className}
         onClick={() => this.setState({ openComents: true })}
       >
         <Link to={"/people/" + id}>

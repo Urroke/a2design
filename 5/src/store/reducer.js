@@ -19,7 +19,7 @@ const initialState = {
 
 const PeopleHandler = {
   [SET_USER](state, action) {
-    action.payload.color = ColorMaker(0.25, 0.45, 0.3, 0.5);
+    if (action.payload) action.payload.color = ColorMaker(0.25, 0.45, 0.3, 0.5);
     return { ...state, user: action.payload };
   },
   [SET_USERS](state, action) {
