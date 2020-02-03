@@ -1,5 +1,5 @@
 import React from "react";
-import Post from "../components/Post";
+import Post from "../../components/post/Post";
 import "./coments.sass";
 
 class Coments extends React.Component {
@@ -10,8 +10,6 @@ class Coments extends React.Component {
   render() {
     const { data, username, id, enableComents } = this.props;
     let { coments } = this.props;
-
-    console.log(coments[0]);
     return (
       <article className="coments" onClick={enableComents}>
         <div className="coments__form">
@@ -23,7 +21,7 @@ class Coments extends React.Component {
           ></Post>
           {coments.map((el, index) => (
             <div key={index} className="coment">
-              <a href={el.email} className="coment__email">
+              <a href={"mailto:" + el.email} className="coment__email">
                 {el.email}
               </a>
               <h2 className="coment__title">{el.name}</h2>

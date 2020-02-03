@@ -1,6 +1,6 @@
 import { SetAllPosts, SetAllUsers } from "../store/action";
 import { connect } from "react-redux";
-import FeedPage from "../modules/FeedPage";
+import FeedPage from "../modules/feed-page/FeedPage";
 
 const mapStateToProps = ({ peopleReducer }) => {
   return {

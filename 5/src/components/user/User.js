@@ -15,7 +15,7 @@ export default props => {
       <div className="user__description">
         <nav className="user__user-name"> @{username}</nav>
         <h1 className="user__name">{name}</h1>
-        <a className="user__link" href={email}>
+        <a className="user__link" href={"mailto:" + email}>
           {email}
         </a>
       </div>

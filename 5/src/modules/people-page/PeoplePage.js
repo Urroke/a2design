@@ -1,5 +1,5 @@
 import React from "react";
-import MiniUser from "../components/MiniUser";
+import MiniUser from "../../components/mini-user/MiniUser";
 import "./users.sass";
 
 class PeoplePage extends React.Component {

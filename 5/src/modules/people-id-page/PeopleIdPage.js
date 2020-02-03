@@ -1,6 +1,6 @@
 import React from "react";
-import User from "../components/User";
-import Post from "../components/Post";
+import User from "../../components/user/User";
+import Post from "../../components/post/Post";
 import "./user.sass";
 
 class PeopleIdPage extends React.Component {
@@ -18,6 +18,7 @@ class PeopleIdPage extends React.Component {
   }
   render() {
     const { user, posts } = this.props;
+    if (!user) return null;
     return (
       <main className="user-page">
         <User data={user}></User>

@@ -1,6 +1,6 @@
 import { SetSingleUser, SetUserPosts, SetUserFromList } from "../store/action";
 import { connect } from "react-redux";
-import PeopleIdPage from "../modules/PeopleIdPage";
+import PeopleIdPage from "../modules/people-id-page/PeopleIdPage";
 
 const mapStateToProps = ({ peopleReducer }) => {
   return {

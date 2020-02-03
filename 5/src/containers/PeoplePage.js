@@ -1,6 +1,6 @@
 import { SetAllUsers } from "../store/action";
 import { connect } from "react-redux";
-import PeoplePage from "../modules/PeoplePage";
+import PeoplePage from "../modules/people-page/PeoplePage";
 
 const mapStateToProps = ({ peopleReducer }) => {
   return {

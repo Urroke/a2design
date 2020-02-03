@@ -1,6 +1,6 @@
 import { SetPostComents } from "../store/action";
 import { connect } from "react-redux";
-import Coments from "../modules/Coments";
+import Coments from "../modules/coments/Coments";
 
 const mapStateToProps = ({ peopleReducer }) => {
   return {

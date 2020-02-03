@@ -1,13 +1,10 @@
 import React from "react";
 import "./post.sass";
 import { Link } from "react-router-dom";
-import Coments from "../containers/Coments";
+import Coments from "../../containers/Coments";
 
 class Post extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { openComents: false };
-  }
+  state = { openComents: false };
   render() {
     const { title, body } = this.props.data;
     const { id, username, className } = this.props;

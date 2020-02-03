@@ -7,6 +7,7 @@ import {
   SET_POSTS
 } from "./actionsTypes";
 import ColorMaker from "../helper/ColorMaker";
+import history from "../helper/history";
 
 const initialState = {
   user: { username: "", name: "", email: "" },
@@ -20,6 +21,7 @@ const initialState = {
 const PeopleHandler = {
   [SET_USER](state, action) {
     if (action.payload) action.payload.color = ColorMaker(0.25, 0.45, 0.3, 0.5);
+    else history.push("/");
     return { ...state, user: action.payload };
   },
   [SET_USERS](state, action) {

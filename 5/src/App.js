@@ -3,10 +3,8 @@ import { Provider } from "react-redux";
 import routes from "./routes";
 import { store } from "./store/index";
 import { Router, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
 import "./App.css";
-
-const history = createBrowserHistory();
+import history from "./helper/history";
 
 function App() {
   return (
